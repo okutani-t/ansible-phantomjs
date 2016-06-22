@@ -1,0 +1,14 @@
+---
+- name: install the phantomjs
+  get_url: >
+    url={{ phantomjs_url }}
+    dest=/usr/local/src/
+
+- name: untar the phantomjs
+  unarchive: >
+    src=/usr/local/src/{{ tar_name }}
+    dest=/usr/local/
+    copy=no
+
+- name: copy phantomjs to /usr/bin/
+  shell: cp /usr/local/{{ dir_name }}/bin/phantomjs /usr/bin

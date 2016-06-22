@@ -1,0 +1,4 @@
+---
+phantomjs_url: https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-x86_64.tar.bz2
+tar_name: phantomjs-1.9.2-linux-x86_64.tar.bz2
+dir_name: phantomjs-1.9.2-linux-x86_64
