@@ -9,6 +9,10 @@
     src=/usr/local/src/{{ tar_name }}
     dest=/usr/local/
     copy=no
+  environment:
+    LANG: C
+    LC_ALL: C
+    LC_MESSAGES: C
 
 - name: copy phantomjs to /usr/bin/
   shell: cp /usr/local/{{ dir_name }}/bin/phantomjs /usr/bin
